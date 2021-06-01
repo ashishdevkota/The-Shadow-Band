@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+*{
+    box-sizing:border-box;
+    color:#777;
+}
+
+html,body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav ul{
+    margin:0;
+    padding: 0;
+}
+.nav li{
+    display:inline;
+}
+
+.nav a{
+    display:inline-block;
+    padding:.5em;
+    color:white;
+    text-decoration:none;
+}
+
+.nav a:hover{
+    background-color:rgba(255,255,255,.3);
+}
+
+.logo a{
+    color:white;
+    font-size:1em;
+    padding:5px;
+    text-decoration:none;
+    width:200px;
+    font-family:'Kenia', cursive;
+    letter-spacing:1px;
+    font-weight:normal;
+}
+
+
+.main-nav{
+    font-size:1em;
+    font-weight:lighter;
+    border-bottom:1px solid rgba(255,255,255,.3);
+}
+
+.main-nav a{
+    font-size:1.4em;
+    width:100%;
+}
+
+.main-header{
+     background-color:rgba(0,0,0,.7); 
+    display:flex;
+    flex-direction:column;
+    position:relative;
+}
+
+.handburger{
+     background-color:white; 
+    height:6px;
+    width:35px;
+    display: flex;
+    flex-direction:column;
+    position:absolute;
+    top:35px;
+    right:20px;
+}
+
+.handburger::before,.handburger::after{
+    content:'';
+    background-color: white;
+    height:100%;
+    width:100%;
+    position: absolute;    
+}
+
+.handburger::before{
+    top:10px;
+}
+
+.handburger::after{
+    top:-10px;
+}
+
+.menu-items{
+    display:none;
+    flex-direction:column;
+    text-align:center;
+}
+
+.menu-items.active{
+    display:flex;
+}
+
+
+
+
+
+.banner{
+background-color:rgba(0,0,0,.2);
+background-image:url('img/cover.jpg');
+background-position:center;
+background-size:cover;
+background-blend-mode:multiply;
+height:400px;
+}
+
+  
+
+.band-name{
+font-size:1.6em;
+font-family: 'Kenia', cursive;
+font-weight:normal;
+color:white;
+text-align:center;
+}
+
+.band-name-large{
+font-size:4em;
+}
+
+.band-name-header{
+    margin:0;
+    padding:0;
+    font-size:6.6em;
+    color:#333;
+    text-shadow:4px 4px 5px rgba(77, 213, 231, 0.952);
+}
+
+.container{
+margin:3em;
+}
+
+    .section-header{
+    text-align: center;
+    font-size:2.5em;
+    text-transform: uppercase;
+    font-weight:bold;
+    font-family: 'Kenia', cursive;
+
+    }
+
+    .about-image{
+    border-radius:50%;
+    width:300px;
+    height:300px;
+    margin:15px;
+    float:left;
+    }
+
+
+
+/* footer  */
+
+.main-footer{
+    background-color:rgba(0,0,0,.7);
+    color:white;
+    padding:.1em 0;
+}
+
+.main-footer-container{
+    display:flex;
+    align-items:center;
+}
+
+.main-footer-container ul{
+    flex-grow:1;
+    text-align:end;
+}
+
+.footer-nav li{
+ padding:0 .5em;
+}
+
+.footer-nav img{
+    width:30px;
+    height:30px;
+}
+
+footer .text-center{
+    text-align:center;
+    color:white;
+}
+
+.btn{
+    text-align:center;
+    vertical-align:middle;
+    padding:.68em;
+    cursor:pointer
+}
+
+.btn-header{
+    margin:.2em 15% .5em 15%;
+    color:#777;
+    border:2px solid #309CDB;
+    border-radius:0;
+    font-size: 1.2em;
+    font-weight:lighter;
+    padding-left:1em;
+    padding-right:1em;
+}
+.btn-header:hover{
+    background-color:rgba(255,255,255,.3);
+}
+
+.btn-play{
+    display:block;
+    margin:0 auto;
+    color:#309CDB;
+    font-size:4em;
+    border-radius:50%;
+    padding:0;
+    width:100px;
+    height:100%;
+}
+
+.tour{
+    border-bottom:1px solid #555;
+    padding:.8em;
+    display:flex;
+    justify-content:space-evenly;
+}
+.tour:last-child{
+    border-bottom:none
+}
+
+
+.tour-date{
+    font-weight:bold;
+}
+.tour-city{
+    font-weight:normal;
+}
+
+.tour-threature{
+    font-weight:normal;
+    
+}
+
+.btn-primary{
+    background:#309CDB;
+    color:white;
+    border:none;
+    padding:.7em;
+}
+
+.shop-items{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.shop-item{
+    margin:30px;
+}
+.shop-item-title{
+    display:block;
+    width:100%;
+    text-align:center;
+    font-weight:bold;
+    font-size:1.5em;
+    color:#333;
+    margin-bottom:15px;
+}
+
+.shop-item-image{
+    height:250px;
+}
+
+.shop-item-details{
+    display:flex;
+    align-items:center;
+    padding:5px;
+}
+
+.shop-item-price{
+    flex-grow:1;
+}
+
+.cart-header{
+    font-weight:bold;
+    font-size:1.2em;
+    color:#333;
+}
+
+.cart-column{
+    display:flex;
+    align-items:center;
+    border-bottom:1px solid black;
+    margin-right:1.5em;
+    padding-bottom:10px;
+    margin-top:10px;
+}
+
+.cart-row{
+    display:flex
+}
+
+.cart-item{
+    width:45%;
+}
+
+.cart-price{
+    width:20%;
+    font-size:1.2em;
+    color:#333;
+}
+
+.cart-quantity{
+    width:35%;
+}
+
+.cart-item-title{
+    color:#333;
+    margin-left:.5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image{
+    width:75px;
+    height:auto;
+    border-radius:10px;
+}
+.btn-danger{
+    color:white;
+    background-color:#EB5757;
+    border:none;
+    border-radius: .3em;
+    font-weight:bold;
+}
+.btn-danger:hover{
+    background-color:#CC4C4C;
+}
+.cart-quantity-input{
+    height:34px;
+    width:50px;
+    border-radius:5px;
+    border:1px solid #56CCF2;
+    background-color:#eee;
+    color:#333;
+    padding:0;
+    text-align:center;
+    font-size: 1.2em;
+    margin-right:25px;
+}
+.cart-row:last-child{
+    border-bottom:1px solid black;
+}
+
+.cart-row:last-child .cart-column{
+    border:none;
+}
+
+.cart-total{
+    text-align:end;
+    margin-top:10px;
+    margin-right:10px;
+}
+.cart-total-title{
+    font-weight:bold;
+    font-size:1.2em;
+    color:black;
+    margin-right:20px;
+}
+
+.cart-total-price{
+    color:#333;
+    font-size:1.1em;
+}
+
+.btn-purchase{
+    display:block;
+    margin:40px auto 80px auto;
+    font-size: 1.75em;
+}
+
